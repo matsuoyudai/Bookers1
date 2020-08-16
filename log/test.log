@@ -1,0 +1,1372 @@
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+ed_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-08-12 04:54:07.304235"], ["updated_at", "2020-08-12 04:54:07.304235"]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:00 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.7ms)
+  Rendered books/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 729ms (Views: 713.4ms | ActiveRecord: 1.4ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 04:55:00 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.6ms)
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:00 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.9ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 04:55:00 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.5ms)
+  Rendered books/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.9ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:00.991119"], ["updated_at", "2020-08-12 04:55:00.991119"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-08-12 04:55:00 +0000
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (2.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.036859"], ["updated_at", "2020-08-12 04:55:01.036859"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.055783"], ["updated_at", "2020-08-12 04:55:01.055783"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (4.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.118782"], ["updated_at", "2020-08-12 04:55:01.118782"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge1"], ["body", "body1"], ["created_at", "2020-08-12 04:55:01.135514"], ["updated_at", "2020-08-12 04:55:01.135514"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge2"], ["body", "body2"], ["created_at", "2020-08-12 04:55:01.138300"], ["updated_at", "2020-08-12 04:55:01.138300"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge3"], ["body", "body3"], ["created_at", "2020-08-12 04:55:01.140472"], ["updated_at", "2020-08-12 04:55:01.140472"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge4"], ["body", "body4"], ["created_at", "2020-08-12 04:55:01.142585"], ["updated_at", "2020-08-12 04:55:01.142585"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge5"], ["body", "body5"], ["created_at", "2020-08-12 04:55:01.144468"], ["updated_at", "2020-08-12 04:55:01.144468"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (3.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.281052"], ["updated_at", "2020-08-12 04:55:01.281052"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.315407"], ["updated_at", "2020-08-12 04:55:01.315407"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.5ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"p13fi", "body"=>"vcz364qzhrhj4zid4hkc"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "p13fi"], ["body", "vcz364qzhrhj4zid4hkc"], ["created_at", "2020-08-12 04:55:01.345186"], ["updated_at", "2020-08-12 04:55:01.345186"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/2
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+Started GET "/books/2" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (5.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (5.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.396603"], ["updated_at", "2020-08-12 04:55:01.396603"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.5ms)
+  Rendered books/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (3.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.456525"], ["updated_at", "2020-08-12 04:55:01.456525"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"3sw9q", "body"=>"53f5mqh0bn2mybhqq1h8"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3sw9q"], ["body", "53f5mqh0bn2mybhqq1h8"], ["created_at", "2020-08-12 04:55:01.498753"], ["updated_at", "2020-08-12 04:55:01.498753"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/2
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+Started GET "/books/2" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (3.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.9ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.524684"], ["updated_at", "2020-08-12 04:55:01.524684"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Destroy (0.4ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (3.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.559412"], ["updated_at", "2020-08-12 04:55:01.559412"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.588793"], ["updated_at", "2020-08-12 04:55:01.588793"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (2.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (6.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.617739"], ["updated_at", "2020-08-12 04:55:01.617739"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (4.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.642670"], ["updated_at", "2020-08-12 04:55:01.642670"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 13ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.683472"], ["updated_at", "2020-08-12 04:55:01.683472"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.714110"], ["updated_at", "2020-08-12 04:55:01.714110"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (4.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.742842"], ["updated_at", "2020-08-12 04:55:01.742842"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.766166"], ["updated_at", "2020-08-12 04:55:01.766166"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (4.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.792820"], ["updated_at", "2020-08-12 04:55:01.792820"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.816123"], ["updated_at", "2020-08-12 04:55:01.816123"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (6.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.849884"], ["updated_at", "2020-08-12 04:55:01.849884"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+Started GET "/books" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.2ms)
+  Rendered books/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (4.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (6.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.905447"], ["updated_at", "2020-08-12 04:55:01.905447"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"ge48l", "body"=>"0nmfc1f7smm7ssc7nx7t"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+  [1m[35m (3.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:01.963507"], ["updated_at", "2020-08-12 04:55:01.963507"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 04:55:01 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+  [1m[35m (2.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 04:55:02.006444"], ["updated_at", "2020-08-12 04:55:02.006444"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 04:55:02 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 04:55:02 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"dv280", "body"=>"sy44slfjjyyrbekls0xh"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+  [1m[35m (3.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:20 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (2.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.6ms)
+  Rendered books/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 310ms (Views: 292.2ms | ActiveRecord: 2.0ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (2.4ms)
+  Rendered books/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 51ms (Views: 22.2ms | ActiveRecord: 3.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.9ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.8ms)
+  Rendered books/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.452066"], ["updated_at", "2020-08-12 05:24:21.452066"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.502283"], ["updated_at", "2020-08-12 05:24:21.502283"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (4.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (5.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.529117"], ["updated_at", "2020-08-12 05:24:21.529117"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (5.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (7.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.576460"], ["updated_at", "2020-08-12 05:24:21.576460"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (2.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge1"], ["body", "body1"], ["created_at", "2020-08-12 05:24:21.608896"], ["updated_at", "2020-08-12 05:24:21.608896"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge2"], ["body", "body2"], ["created_at", "2020-08-12 05:24:21.621577"], ["updated_at", "2020-08-12 05:24:21.621577"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (1.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge3"], ["body", "body3"], ["created_at", "2020-08-12 05:24:21.627654"], ["updated_at", "2020-08-12 05:24:21.627654"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (1.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge4"], ["body", "body4"], ["created_at", "2020-08-12 05:24:21.634328"], ["updated_at", "2020-08-12 05:24:21.634328"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge5"], ["body", "body5"], ["created_at", "2020-08-12 05:24:21.638831"], ["updated_at", "2020-08-12 05:24:21.638831"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (3.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (4.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.796434"], ["updated_at", "2020-08-12 05:24:21.796434"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.821679"], ["updated_at", "2020-08-12 05:24:21.821679"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"1e5zv", "body"=>"98p5nrjh8fftc7h4934d"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "1e5zv"], ["body", "98p5nrjh8fftc7h4934d"], ["created_at", "2020-08-12 05:24:21.847202"], ["updated_at", "2020-08-12 05:24:21.847202"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/2
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms)
+Started GET "/books/2" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (5.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.884489"], ["updated_at", "2020-08-12 05:24:21.884489"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.5ms)
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (4.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (5.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.930258"], ["updated_at", "2020-08-12 05:24:21.930258"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.2ms)
+  Rendered books/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"fdsjv", "body"=>"ne5gqxm37fewluu4qple"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "fdsjv"], ["body", "ne5gqxm37fewluu4qple"], ["created_at", "2020-08-12 05:24:21.962891"], ["updated_at", "2020-08-12 05:24:21.962891"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/2
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+Started GET "/books/2" for 127.0.0.1 at 2020-08-12 05:24:21 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (6.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:21.992350"], ["updated_at", "2020-08-12 05:24:21.992350"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Destroy (0.4ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (4.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.057796"], ["updated_at", "2020-08-12 05:24:22.057796"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (13.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (9.0ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.096399"], ["updated_at", "2020-08-12 05:24:22.096399"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.130175"], ["updated_at", "2020-08-12 05:24:22.130175"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (4.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.169637"], ["updated_at", "2020-08-12 05:24:22.169637"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (3.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 3.5ms | ActiveRecord: 3.9ms)
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 23ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.227553"], ["updated_at", "2020-08-12 05:24:22.227553"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (2.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (10.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.260650"], ["updated_at", "2020-08-12 05:24:22.260650"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (4.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.296499"], ["updated_at", "2020-08-12 05:24:22.296499"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.320557"], ["updated_at", "2020-08-12 05:24:22.320557"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.2ms)
+  Rendered books/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (4.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (6.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.356848"], ["updated_at", "2020-08-12 05:24:22.356848"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (4.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (5.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.388185"], ["updated_at", "2020-08-12 05:24:22.388185"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.428634"], ["updated_at", "2020-08-12 05:24:22.428634"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.2ms)
+  Rendered books/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (2.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.464673"], ["updated_at", "2020-08-12 05:24:22.464673"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"394yo", "body"=>"ss90k3kptcjesbcipgud"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Update (0.4ms)[0m  [1m[33mUPDATE "books" SET "title" = ?, "body" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["title", "394yo"], ["body", "ss90k3kptcjesbcipgud"], ["updated_at", "2020-08-12 05:24:22.496412"], ["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/1
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.520970"], ["updated_at", "2020-08-12 05:24:22.520970"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (3.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (5.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:24:22.579862"], ["updated_at", "2020-08-12 05:24:22.579862"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.2ms)
+  Rendered books/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"g9elv", "body"=>"fwxxrw0mdsa0iscsv1o8"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Update (0.6ms)[0m  [1m[33mUPDATE "books" SET "title" = ?, "body" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["title", "g9elv"], ["body", "fwxxrw0mdsa0iscsv1o8"], ["updated_at", "2020-08-12 05:24:22.626319"], ["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/1
+Completed 302 Found in 18ms (ActiveRecord: 1.3ms)
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:24:22 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (2.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:47 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (2.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.6ms)
+  Rendered books/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 557ms (Views: 513.9ms | ActiveRecord: 2.2ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (1.1ms)
+  Rendered books/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 1.2ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (1.9ms)
+  Rendered books/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (8.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:48.149524"], ["updated_at", "2020-08-12 05:42:48.149524"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (4.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (14.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:48.251733"], ["updated_at", "2020-08-12 05:42:48.251733"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (4.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:48.345008"], ["updated_at", "2020-08-12 05:42:48.345008"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (4.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:48.478240"], ["updated_at", "2020-08-12 05:42:48.478240"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge1"], ["body", "body1"], ["created_at", "2020-08-12 05:42:48.529224"], ["updated_at", "2020-08-12 05:42:48.529224"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge2"], ["body", "body2"], ["created_at", "2020-08-12 05:42:48.539998"], ["updated_at", "2020-08-12 05:42:48.539998"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge3"], ["body", "body3"], ["created_at", "2020-08-12 05:42:48.543833"], ["updated_at", "2020-08-12 05:42:48.543833"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge4"], ["body", "body4"], ["created_at", "2020-08-12 05:42:48.548836"], ["updated_at", "2020-08-12 05:42:48.548836"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge5"], ["body", "body5"], ["created_at", "2020-08-12 05:42:48.553139"], ["updated_at", "2020-08-12 05:42:48.553139"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.1ms)
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (6.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:48.767017"], ["updated_at", "2020-08-12 05:42:48.767017"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (9.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (7.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:48.829889"], ["updated_at", "2020-08-12 05:42:48.829889"]]
+  [1m[35m (4.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.1ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"x0f24", "body"=>"iaeku3zi94gsuazeednx"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (10.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "x0f24"], ["body", "iaeku3zi94gsuazeednx"], ["created_at", "2020-08-12 05:42:48.892243"], ["updated_at", "2020-08-12 05:42:48.892243"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/2
+Completed 302 Found in 16ms (ActiveRecord: 10.6ms)
+Started GET "/books/2" for 127.0.0.1 at 2020-08-12 05:42:48 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (2.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (20.9ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:48.972031"], ["updated_at", "2020-08-12 05:42:48.972031"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (4.9ms)
+  Rendered books/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 36ms (Views: 30.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (17.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (9.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.123366"], ["updated_at", "2020-08-12 05:42:49.123366"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 33ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+Started POST "/books" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"8gs33", "body"=>"pm96o0m970bfa9thx1of"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "8gs33"], ["body", "pm96o0m970bfa9thx1of"], ["created_at", "2020-08-12 05:42:49.210082"], ["updated_at", "2020-08-12 05:42:49.210082"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/2
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+Started GET "/books/2" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (3.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (4.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.274658"], ["updated_at", "2020-08-12 05:42:49.274658"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.3ms)
+  Rendered books/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Destroy (1.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (4.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (6.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.436888"], ["updated_at", "2020-08-12 05:42:49.436888"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (4.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (5.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.529373"], ["updated_at", "2020-08-12 05:42:49.529373"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (13.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (5.0ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.590443"], ["updated_at", "2020-08-12 05:42:49.590443"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (5.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (8.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.642017"], ["updated_at", "2020-08-12 05:42:49.642017"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (2.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 4.7ms | ActiveRecord: 2.0ms)
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (7.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (12.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (4.0ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.747525"], ["updated_at", "2020-08-12 05:42:49.747525"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (4.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (6.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.830426"], ["updated_at", "2020-08-12 05:42:49.830426"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (4.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.0ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:49.923213"], ["updated_at", "2020-08-12 05:42:49.923213"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:49 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 17ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+  [1m[35m (22.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:50.002082"], ["updated_at", "2020-08-12 05:42:50.002082"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (7.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (16.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:50.050199"], ["updated_at", "2020-08-12 05:42:50.050199"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (3.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (6.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:50.121196"], ["updated_at", "2020-08-12 05:42:50.121196"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.2ms)
+  Rendered books/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (3.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:50.214187"], ["updated_at", "2020-08-12 05:42:50.214187"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+Started GET "/books" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered layouts/_error.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (2.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (8.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:50.285019"], ["updated_at", "2020-08-12 05:42:50.285019"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.1ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"3tzrc", "body"=>"bjwhbebzocuckoh6ag24"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Update (0.9ms)[0m  [1m[33mUPDATE "books" SET "title" = ?, "body" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["title", "3tzrc"], ["body", "bjwhbebzocuckoh6ag24"], ["updated_at", "2020-08-12 05:42:50.367501"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/1
+Completed 302 Found in 21ms (ActiveRecord: 2.0ms)
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (4.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (10.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:50.422329"], ["updated_at", "2020-08-12 05:42:50.422329"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.3ms)
+  Rendered books/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"", "body"=>""}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.5ms)
+  Rendered books/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 14ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+  [1m[35m (4.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Create (2.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hoge"], ["body", "body"], ["created_at", "2020-08-12 05:42:50.523973"], ["updated_at", "2020-08-12 05:42:50.523973"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/books/1/edit" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/edit.html.erb within layouts/application
+  Rendered layouts/_error.html.erb (0.1ms)
+  Rendered books/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+Started PATCH "/books/1" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "book"=>{"title"=>"bovmi", "body"=>"sjw6r6yxuq4uhrt2nxdh"}, "commit"=>"Update Book", "id"=>"1"}
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBook Update (0.3ms)[0m  [1m[33mUPDATE "books" SET "title" = ?, "body" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["title", "bovmi"], ["body", "sjw6r6yxuq4uhrt2nxdh"], ["updated_at", "2020-08-12 05:42:50.581128"], ["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://127.0.0.1/books/1
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+Started GET "/books/1" for 127.0.0.1 at 2020-08-12 05:42:50 +0000
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (5.1ms)[0m  [1m[31mrollback transaction[0m
